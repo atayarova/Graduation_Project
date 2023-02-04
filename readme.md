@@ -9,7 +9,7 @@
 ### Цель данного проекта обработка информации с других источников и вывод отчетов (Power BI | Reporting Service)
 
 <image
-  src="/Documentation/Images/Purpose.png"
+  src="/Documentation/Images/purpose.png"
   alt=" ">
 
 
@@ -33,7 +33,7 @@
   alt="Физическая модель">
 
 
-  
+
 ----
 
 Документация к проекту [Graduation_Project][Graduation_Project].
