@@ -1,8 +1,5 @@
 #### 
-
-[Project](../../../../../index.md) > [ROZA_PC](../../../../index.md) > [User databases](../../../index.md) > [GP_Reports](../../index.md) > Programmability > [Sequences](Sequences.md) > dbo.TasksID_seq
-
-# ![Sequences](../../../../../Images/Sequence32.png) [dbo].[TasksID_seq]
+# [Sequences][dbo].[TasksID_seq]
 
 ---
 
@@ -33,9 +30,4 @@ GO
 
 ---
 
-###### Author:  ratay
-
-###### Copyright 2023 - All Rights Reserved
-
-###### Created: 4 февраля 2023 г. 16:11:10
-
+###### Author:  ratayarova

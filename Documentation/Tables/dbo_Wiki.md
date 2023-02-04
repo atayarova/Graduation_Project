@@ -1,38 +1,22 @@
 #### 
-
-[Project](../../../../index.md) > [ROZA_PC](../../../index.md) > [User databases](../../index.md) > [GP_Reports](../index.md) > [Tables](Tables.md) > dbo.Wiki
-
-# ![Tables](../../../../Images/Table32.png) [dbo].[Wiki]
-
----
-
-## <a name="#properties"></a>Properties
-
-| Property | Value |
-|---|---|
-| Collation | SQL_Latin1_General_CP1_CI_AS |
-| Row Count (~) | 0 |
-| Created | 3:03:28 4 февраля 2023 г. |
-| Last Modified | 15:26:34 4 февраля 2023 г. |
-
-
+# [Tables][dbo].[Wiki]
 ---
 
 ## <a name="#columns"></a>Columns
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default |
 |---|---|---|---|---|---|
-| [![Cluster Primary Key PK_Wiki: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [WikiID_seq]) |
+| [[Cluster Primary Key PK_Wiki: ID]](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [WikiID_seq]) |
 |  | Title | nvarchar(150) | 300 | NOT NULL |  |
-| [![Foreign Keys FK_Wiki_WikiCategory: [dbo].[WikiCategory].CategoryID](../../../../Images/fk.png)](#foreignkeys) | CategoryID | int | 4 | NULL allowed |  |
+| [[Foreign Keys FK_Wiki_WikiCategory: [dbo].[WikiCategory].CategoryID]](#foreignkeys) | CategoryID | int | 4 | NULL allowed |  |
 |  | Article | nvarchar(max) | max | NOT NULL |  |
 |  | DateCheck | datetime2 | 8 | NULL allowed |  |
 |  | DateExpiration | datetime2 | 8 | NULL allowed |  |
 |  | DateChanges | datetime2 | 8 | NULL allowed |  |
 |  | Comments | nvarchar(max) | max | NULL allowed |  |
-| [![Foreign Keys FK_Wiki_WikiTags: [dbo].[WikiTags].TagID](../../../../Images/fk.png)](#foreignkeys) | TagID | int | 4 | NULL allowed |  |
-| [![Foreign Keys FK_Wiki_Users: [dbo].[Users].UserID](../../../../Images/fk.png)](#foreignkeys) | UserID | int | 4 | NOT NULL |  |
-| [![Foreign Keys FK_Wiki_Sourses: [dbo].[Sourses].SouseID](../../../../Images/fk.png)](#foreignkeys) | SouseID | int | 4 | NULL allowed |  |
+| [[Foreign Keys FK_Wiki_WikiTags: [dbo].[WikiTags].TagID]](#foreignkeys) | TagID | int | 4 | NULL allowed |  |
+| [[Foreign Keys FK_Wiki_Users: [dbo].[Users].UserID]](#foreignkeys) | UserID | int | 4 | NOT NULL |  |
+| [[Foreign Keys FK_Wiki_Sourses: [dbo].[Sourses].SouseID]](#foreignkeys) | SouseID | int | 4 | NULL allowed |  |
 
 
 ---
@@ -41,7 +25,7 @@
 
 | Key | Name | Key Columns | Unique |
 |---|---|---|---|
-| [![Cluster Primary Key PK_Wiki: ID](../../../../Images/pkcluster.png)](#indexes) | PK_Wiki | ID | YES |
+| [[Cluster Primary Key PK_Wiki: ID]](#indexes) | PK_Wiki | ID | YES |
 
 
 ---
@@ -102,9 +86,5 @@ GO
 
 ---
 
-###### Author:  ratay
-
-###### Copyright 2023 - All Rights Reserved
-
-###### Created: 4 февраля 2023 г. 16:11:10
+###### Author:  ratayarova
 

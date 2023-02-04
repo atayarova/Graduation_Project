@@ -1,20 +1,5 @@
 #### 
-
-[Project](../../../../index.md) > [ROZA_PC](../../../index.md) > [User databases](../../index.md) > [GP_Reports](../index.md) > [Tables](Tables.md) > dbo.TasksCategory
-
-# ![Tables](../../../../Images/Table32.png) [dbo].[TasksCategory]
-
----
-
-## <a name="#properties"></a>Properties
-
-| Property | Value |
-|---|---|
-| Collation | SQL_Latin1_General_CP1_CI_AS |
-| Row Count (~) | 0 |
-| Created | 3:02:00 4 февраля 2023 г. |
-| Last Modified | 15:36:22 4 февраля 2023 г. |
-
+# [Tables] [dbo].[TasksCategory]
 
 ---
 
@@ -22,7 +7,7 @@
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_TasksCategory: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [TasksCategoryID_seq]) |  |
+| [[Cluster Primary Key PK_TasksCategory: ID]](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [TasksCategoryID_seq]) |  |
 |  | CategoryName | nvarchar(150) | 300 | NOT NULL |  | _Категория заявки_ |
 
 
@@ -32,7 +17,7 @@
 
 | Key | Name | Key Columns | Unique |
 |---|---|---|---|
-| [![Cluster Primary Key PK_TasksCategory: ID](../../../../Images/pkcluster.png)](#indexes) | PK_TasksCategory | ID | YES |
+| [[Cluster Primary Key PK_TasksCategory: ID]](#indexes) | PK_TasksCategory | ID | YES |
 
 
 ---
@@ -56,9 +41,4 @@ GO
 
 ---
 
-###### Author:  ratay
-
-###### Copyright 2023 - All Rights Reserved
-
-###### Created: 4 февраля 2023 г. 16:11:10
-
+###### Author:  ratayarova

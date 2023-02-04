@@ -1,19 +1,5 @@
 #### 
-
-[Project](../../../../index.md) > [ROZA_PC](../../../index.md) > [User databases](../../index.md) > [GP_Reports](../index.md) > [Tables](Tables.md) > dbo.JobTitles
-
-# ![Tables](../../../../Images/Table32.png) [dbo].[JobTitles]
-
----
-
-## <a name="#properties"></a>Properties
-
-| Property | Value |
-|---|---|
-| Collation | SQL_Latin1_General_CP1_CI_AS |
-| Row Count (~) | 0 |
-| Created | 2:59:16 4 февраля 2023 г. |
-| Last Modified | 14:40:48 4 февраля 2023 г. |
+# [Tables][dbo].[JobTitles]
 
 
 ---
@@ -22,8 +8,8 @@
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_JobTitles: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [JobTitleID_seq]) |  |
-| [![Indexes UQ_JobTitles_Name](../../../../Images/Index.png)](#indexes) | JobTitleName | nvarchar(150) | 300 | NOT NULL |  | _Название должности _ |
+| [[Cluster Primary Key PK_JobTitles: ID]](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [JobTitleID_seq]) |  |
+| [[Indexes UQ_JobTitles_Name] | JobTitleName | nvarchar(150) | 300 | NOT NULL |  | _Название должности _ |
 
 
 ---
@@ -32,7 +18,7 @@
 
 | Key | Name | Key Columns | Unique |
 |---|---|---|---|
-| [![Cluster Primary Key PK_JobTitles: ID](../../../../Images/pkcluster.png)](#indexes) | PK_JobTitles | ID | YES |
+| [[Cluster Primary Key PK_JobTitles: ID]](#indexes) | PK_JobTitles | ID | YES |
 |  | UQ_JobTitles_Name | JobTitleName | YES |
 
 
@@ -59,9 +45,4 @@ GO
 
 ---
 
-###### Author:  ratay
-
-###### Copyright 2023 - All Rights Reserved
-
-###### Created: 4 февраля 2023 г. 16:11:10
-
+###### Author:  ratayrova

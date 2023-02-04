@@ -1,8 +1,5 @@
 #### 
-
-[Project](../../../../index.md) > [ROZA_PC](../../../index.md) > [User databases](../../index.md) > [GP_Reports](../index.md) > Tables
-
-# ![Tables](../../../../Images/Table32.png) Tables
+# [Tables]Tables
 
 ---
 
@@ -30,9 +27,4 @@
 
 ---
 
-###### Author:  ratay
-
-###### Copyright 2023 - All Rights Reserved
-
-###### Created: 4 февраля 2023 г. 16:11:10
-
+###### Author:  ratayarova

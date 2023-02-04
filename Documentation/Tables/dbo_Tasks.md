@@ -1,20 +1,5 @@
 #### 
-
-[Project](../../../../index.md) > [ROZA_PC](../../../index.md) > [User databases](../../index.md) > [GP_Reports](../index.md) > [Tables](Tables.md) > dbo.Tasks
-
-# ![Tables](../../../../Images/Table32.png) [dbo].[Tasks]
-
----
-
-## <a name="#properties"></a>Properties
-
-| Property | Value |
-|---|---|
-| Collation | SQL_Latin1_General_CP1_CI_AS |
-| Row Count (~) | 0 |
-| Created | 15:36:22 4 февраля 2023 г. |
-| Last Modified | 15:43:20 4 февраля 2023 г. |
-
+# [Tables] [dbo].[Tasks]
 
 ---
 
@@ -22,24 +7,24 @@
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_Tasks: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [TasksID_seq]) |  |
-| [![Indexes IX_Tasks_TaskTypeID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_TypeTasks: [dbo].[TypeTasks].TaskTypeID](../../../../Images/fk.png)](#foreignkeys) | TaskTypeID | int | 4 | NOT NULL |  | _Тип заявки_ |
+| [[Cluster Primary Key PK_Tasks: ID]](#indexes) | ID | int | 4 | NOT NULL | (NEXT VALUE FOR [TasksID_seq]) |  |
+| [[Indexes IX_Tasks_TaskTypeID]](#indexes)[[Foreign Keys FK_Tasks_TypeTasks: [dbo].[TypeTasks].TaskTypeID]](#foreignkeys) | TaskTypeID | int | 4 | NOT NULL |  | _Тип заявки_ |
 |  | TaskNumber | nvarchar(150) | 300 | NULL allowed |  | _Номер заявки_ |
 |  | Title | nvarchar(150) | 300 | NOT NULL |  | _Заголовок_ |
 |  | Description | nvarchar(max) | max | NOT NULL |  | _Описание_ |
-| [![Indexes IX_Tasks_SpesialistID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_TasksSpesialist_Users: [dbo].[Users].SpesialistID](../../../../Images/fk.png)](#foreignkeys) | SpesialistID | int | 4 | NOT NULL |  | _Исполнитель заявки_ |
-| [![Indexes IX_Tasks_InitiatorID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_TasksInitiator_Users: [dbo].[Users].InitiatorID](../../../../Images/fk.png)](#foreignkeys) | InitiatorID | int | 4 | NOT NULL |  | _Инициатор заявки_ |
-| [![Indexes IX_Tasks_StatusID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_TaskStatuses: [dbo].[TaskStatuses].StatusID](../../../../Images/fk.png)](#foreignkeys) | StatusID | int | 4 | NOT NULL |  | _Статус _ |
+| [[Indexes IX_Tasks_SpesialistID]](#indexes)[[Foreign Keys FK_TasksSpesialist_Users: [dbo].[Users].SpesialistID]](#foreignkeys) | SpesialistID | int | 4 | NOT NULL |  | _Исполнитель заявки_ |
+| [[Indexes IX_Tasks_InitiatorID]](#indexes)[[Foreign Keys FK_TasksInitiator_Users: [dbo].[Users].InitiatorID]](#foreignkeys) | InitiatorID | int | 4 | NOT NULL |  | _Инициатор заявки_ |
+| [[Indexes IX_Tasks_StatusID]](#indexes)[[Foreign Keys FK_Tasks_TaskStatuses: [dbo].[TaskStatuses].StatusID]](#foreignkeys) | StatusID | int | 4 | NOT NULL |  | _Статус _ |
 |  | DateOfCreation | datetime2 | 8 | NOT NULL |  | _Дата создания_ |
 |  | Deadline | datetime2 | 8 | NOT NULL |  | _Срок выполнения_ |
 |  | DateClosing | datetime2 | 8 | NOT NULL |  | _Дата завершения_ |
 |  | Note | nvarchar(500) | 1000 | NULL allowed |  | _Примечание_ |
-| [![Indexes IX_Tasks_PriorityID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_TaskPriority: [dbo].[TaskPriority].PriorityID](../../../../Images/fk.png)](#foreignkeys) | PriorityID | int | 4 | NOT NULL |  | _Приоритет_ |
-| [![Indexes IX_Tasks_SourseID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_Sourses: [dbo].[Sourses].SourseID](../../../../Images/fk.png)](#foreignkeys) | SourseID | int | 4 | NOT NULL |  | _Источник заявки_ |
-| [![Indexes IX_Tasks_GroupID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_Groups: [dbo].[Groups].GroupID](../../../../Images/fk.png)](#foreignkeys) | GroupID | int | 4 | NOT NULL |  | _Группа_ |
-| [![Indexes IX_Tasks_CategoryID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_TasksCategory: [dbo].[TasksCategory].CategoryID](../../../../Images/fk.png)](#foreignkeys) | CategoryID | int | 4 | NOT NULL |  | _Категория_ |
-| [![Indexes IX_Tasks_SubCategoryID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_TaskSubCategory: [dbo].[TaskSubCategory].SubCategoryID](../../../../Images/fk.png)](#foreignkeys) | SubCategoryID | int | 4 | NOT NULL |  | _Субкатегория_ |
-| [![Indexes IX_Tasks_PositionID](../../../../Images/Index.png)](#indexes)[![Foreign Keys FK_Tasks_TaskPosition: [dbo].[TaskPosition].PositionID](../../../../Images/fk.png)](#foreignkeys) | PositionID | int | 4 | NOT NULL |  | _позиция_ |
+| [[Indexes IX_Tasks_PriorityID]](#indexes)[![Foreign Keys FK_Tasks_TaskPriority: [dbo].[TaskPriority].PriorityID]](#foreignkeys) | PriorityID | int | 4 | NOT NULL |  | _Приоритет_ |
+| [[Indexes IX_Tasks_SourseID]](#indexes)[[Foreign Keys FK_Tasks_Sourses: [dbo].[Sourses].SourseID]](#foreignkeys) | SourseID | int | 4 | NOT NULL |  | _Источник заявки_ |
+| [[Indexes IX_Tasks_GroupID][[Foreign Keys FK_Tasks_Groups: [dbo].[Groups].GroupID]](#foreignkeys) | GroupID | int | 4 | NOT NULL |  | _Группа_ |
+| [[Indexes IX_Tasks_CategoryID]](#indexes)[[Foreign Keys FK_Tasks_TasksCategory: [dbo].[TasksCategory].CategoryID]](#foreignkeys) | CategoryID | int | 4 | NOT NULL |  | _Категория_ |
+| [[Indexes IX_Tasks_SubCategoryID]](#indexes)[[Foreign Keys FK_Tasks_TaskSubCategory: [dbo].[TaskSubCategory].SubCategoryID]](#foreignkeys) | SubCategoryID | int | 4 | NOT NULL |  | _Субкатегория_ |
+| [[Indexes IX_Tasks_PositionID]](#indexes)[[Foreign Keys FK_Tasks_TaskPosition: [dbo].[TaskPosition].PositionID]](#foreignkeys) | PositionID | int | 4 | NOT NULL |  | _позиция_ |
 
 
 ---
@@ -48,7 +33,7 @@
 
 | Key | Name | Key Columns | Unique |
 |---|---|---|---|
-| [![Cluster Primary Key PK_Tasks: ID](../../../../Images/pkcluster.png)](#indexes) | PK_Tasks | ID | YES |
+| [[Cluster Primary Key PK_Tasks: ID]](#indexes) | PK_Tasks | ID | YES |
 |  | IX_Tasks_CategoryID | CategoryID |  |
 |  | IX_Tasks_GroupID | GroupID |  |
 |  | IX_Tasks_InitiatorID | InitiatorID |  |
@@ -203,9 +188,5 @@ GO
 
 ---
 
-###### Author:  ratay
-
-###### Copyright 2023 - All Rights Reserved
-
-###### Created: 4 февраля 2023 г. 16:11:10
+###### Author:  ratayarova
 
