@@ -25,14 +25,36 @@
 <image
   src="/Documentation/Images/Логическая модель.jpg"
   alt="Логическая модель ">
-
-  ### Физический уровень
+  
+ ### Физический уровень
 
 <image
   src="/Documentation/Images/Diagram.png"
   alt="Физическая модель">
 
+ ### Отчеты
+<image
+  src="/Documentation/Images/Report Services.png"
+  alt="Пример отчета по закрытым заявкам - Report Services">
 
+ # Куб
+
+#### К проекту создан куб:
+<image
+  src="/Documentation/Images/CUBE GP Project.png"
+  alt="CUBE GP Project">
+
+<image
+  src="/Documentation/Images/количество заявок по приоритетам.png"
+  alt="количество заявок по приоритетам - Management Studio">
+
+<image
+  src="/Documentation/Images/excel.png"
+  alt="Задачи по исполнителю и в группировке по источнику данных - excel">
+
+<image
+  src="/Documentation/Images/excel по приоритетам.png"
+  alt="Задачи по приоритетам - excel">
 
 ----
 
